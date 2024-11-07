@@ -20,7 +20,7 @@ from tests.conftest import try_get_url
 def test_page_templates(client, url, template):
     url = f'/{url}' if url else '/'
     response = try_get_url(client, url)
-    assertTemplateUsed(response, template, msg_prefix=(
+    assertTemplateUsed(response, template, msg_prefix=(                
         f'Убедитесь, что для отображения страницы `{url}` используется '
         f'шаблон `{template}`.'
     ))
