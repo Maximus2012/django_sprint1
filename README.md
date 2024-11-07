@@ -3,14 +3,19 @@
 
 ## Содержание
 - [Технологии](#технологии)
-- [Revies](#review)
+- [Review](#review)
 
 
 ## Технологии
 - [Python]
 - [Django]
 
+## Установка
 
+### Склонируйте репозиторий 
+```sh
+git clone https://github.com/Maximus2012/django_sprint1.git
+```
 
 
 ## Review
