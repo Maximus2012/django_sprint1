@@ -27,10 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-TEMPLATES_DIR = BASE_DIR / 'templates' #Change
+TEMPLATES_DIR = BASE_DIR / 'templates'
+
+
 STATICFILES_DIRS = [
-    BASE_DIR / 'static_dev',
-]   
+    BASE_DIR / 'static_dev'
+]
+
+   
 # Application definition
 
 INSTALLED_APPS = [
