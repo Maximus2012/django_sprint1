@@ -52,12 +52,10 @@ for i in posts:
 
 def post_detail(request, post_id):
     template = "blog/detail.html"
-    if post_id in post:
-        context = post[post_id]
-        return render(request, template, context)
-    else:
-        context = post[post_id]
-        raise Http404(f"<Нет такого ключа {post_id}>", context)
+    post = next((post for post in posts if post['id'] == post_id), None)
+    if post is None:
+        raise Http404("Post does not exist")
+    return render(request, template, {'post': post})
 
 
 def category_posts(request, category_slug):
